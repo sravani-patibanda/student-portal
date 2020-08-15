@@ -1,1 +1,1 @@
-# student-portal
+# student-portal-front-end
