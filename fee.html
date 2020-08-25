@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <style>
+           
+             #section0 {padding-top:50px;height:970px;color: #000;border: 2px solid #000;background-color: #ffffff00 ;}
+             *:focus{outline:none;}
+                    body {font: 14px/21px sans-serif;}
+                    #myForm label {font-family: "Times New Roman";}
+                    .required_notification {font-size: 16px;}
+
+                    #myForm ul {
+                        width:750px;
+                        list-style-type:none;
+                        list-style-position:outside;
+                        margin:0px;
+                        padding:0px;
+                    }
+                    #myForm li{
+                        padding:12px;
+                        border-bottom:1px solid #eee;
+                        position:relative;
+                    }
+
+                    #myForm li:first-child, #myForm li:last-child {
+                        border-bottom:1px solid #777;
+                    }
+
+                    #myForm h1 {
+                        margin:430px;
+                        font-family:Georgia, Times, "Times New Roman", serif;
+                        color:#d45210;
+                        display: inline;
+                    }
+                    .required_notification {
+                        color:#d45252;
+                        margin:-20px 0 0 0;
+                        display:inline;
+                        float:right;
+                    }
+
+                    #myForm label {
+                        color: black;
+                        width:150px;
+                        margin-top: 3px;
+                        display:inline-block;
+                        padding:3px;
+                    }
+                    #myForm input {
+                        height:25px;
+                        width:220px;
+                        padding:5px 8px;
+                    }
+                    #myForm button {margin-left:500px;}
+
+                    #myForm input, #myForm textarea {
+                        border:1px solid black;
+                        box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+                        border-radius:2px;
+                        background: white;
+                    }
+                    #myForm input:focus, #myForm textarea:focus {
+                        background: white;
+                        border:1px solid #555;
+                        box-shadow: 0 0 3px #aaa;
+                    }
+                    /* Button Style */
+                    button.submit {
+                        background-color: #68b12f;
+                        border: 1px solid #509111;
+                        border-bottom: 1px solid #5b992b;
+                        border-radius: 3px;
+                        color: white;
+                        font-weight: bold;
+                        padding: 6px 20px;
+                        text-align: center;
+                        text-shadow: 0 -1px 0 #396715;
+                    }
+                    button.submit:hover {
+                        opacity:.85;
+                        cursor: pointer;
+                    }
+                    button.submit:active {
+                        border: 1px solid #20911e;
+                        box-shadow: 0 0 10px 5px #356b0b inset;
+                    
+                    }
+                    #cl{
+                        text-decoration-color: black;
+                    }
+
+                    #myForm input:required{
+                        
+                         box-shadow: 0 0 5px #fff;
+                         background-color: white;
+                        //border-color: #28921f;
+                    }
+
+                    #myForm input:focus:invalid, #myForm textarea:focus:invalid { 
+                       
+                        box-shadow: 0 0 5px white;
+                        border-color: #b03535;
+                    }
+
+                    #myForm input:required:valid, #myForm textarea:required:valid { 
+                        box-shadow: 0 0 5px #fff;
+                        border-color: #28921f;
+                    }
+                   
+                    *:focus{outline:none;}
+body {font: 14px/21px sans-serif;}
+#subject label {font-family:Times New Roman}
+.required_notification {font-size: 16px;}
+
+body{
+    
+    margin: 1%;
+    padding: 1%;
+    background: url(images/img.jpg);
+    background-size: contain;
+    background-position: top;
+    }
+
+#subject ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+#subject li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+#subject li:first-child, #subject li:last-child {
+    border-bottom:1px solid #777;
+}
+
+#subject h1 {
+    margin:430px;
+  font-family:Times New Roman;
+    color:#d45210;
+  display: inline;
+}
+.required_notification {
+    color:#d45252;
+    margin:-20px 0 0 0;
+    display:inline;
+    float:right;
+}
+
+#subject label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+}
+#subject input,#subject select {
+    height:30px;
+    width:220px;
+    padding:5px 8px;
+}
+#subject button {margin-left:500px;}
+
+#subject input, #subject textarea,#subject select {
+    border:1px solid black;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+#subject input:focus, #subject textarea:focus {
+    background: white;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+/* Button Style */
+button.submit {
+    background-color: #68b12f;
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+#subject input:required{
+    
+    box-shadow: 0 0 5px #fff;
+    border-color: #28921f;
+}
+
+#subject input:focus:invalid, #subject textarea:focus:invalid { 
+   
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+
+#subject input:required:valid, #subject textarea:required:valid { 
+   
+    box-shadow: 0 0 5px #fff;
+    border-color: #28921f;
+}
+#cl{
+    background: black;
+   
+    text-decoration-color: white;
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .section0{
+        width: 30%;
+        
+
+    }
+                    
+        </style>
+    </head>
+<div id="section0" class="container-fluid">
+            <h2> Welcome to Fee Submission...</h2>
+            <body>
+                <ol>
+                    <form id="myForm" action="fee.php" method="post">
+                        <h1> Fee Submission Portal<br></h1>
+                        <br>
+
+
+                        <li><label id="r">Name of Institute:</label><input type="text" name="institute" required/>
+                        </li>
+
+                        <li><label id="r">Account No:</label><input type="text" name="accountno" placeholder="16 digit number" required/>
+                        </li>
+                        <li><label id="r">Name of Student:</label><input type="text" name="sname"  required/>
+                        </li>
+                        <li><label id="r">Student Id:</label><input type="text" name="roll"  required pattern="[0-9]{5}"/>
+
+                        
+
+
+                        <tr>
+                       
+                         <label >Semester:</label> <select name="Semester" >
+                                <option id="r" >1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                <option>6</option>
+                                 <option>7</option>
+                                  <option>8</option>
+                             </select>
+
+                        </tr>
+                        <tr>
+                       
+                         <label >Year:</label> <select name="year" >
+                                <option id="r" >1st</option>
+                                <option>2nd</option>
+                                <option>3rd</option>
+                                 <option>4th</option>
+                             </select>
+
+                        </tr>
+                        <tr>
+                       
+                         <label >branch:</label> <select name="branch" >
+                                <option id="r" >CSE</option>
+                                <option>ECE</option>
+                                <option>EEE</option>
+                                 <option>MECH</option>
+                                  <option>CIVIL</option>
+                             </select><br>
+
+                        </tr>
+                        <br>
+                        <br>
+
+                        <h1>Fee Details</h1>
+
+                        <ol>
+
+                            <li><label id="r">Tution Fee:</label><input type="text" name="tutionf" placeholder=" Enter Amount" required/>
+
+
+                            <li><label id="r">Exam Fee:</label><input type="text" name="examf"  required/>
+
+                            <li><label id="r">Enrolment Fee:</label><input type="text" name="enrollf" required/>
+
+                    
+							<li><label id="r">Cash/DD/Check no:</label><input type="text" name="dd"  required/>
+							<li><label id="r">Bank Name:</label><input type="text" name="bnk"  required/>
+
+
+                                
+                            <li><label id="r">Total Fee:</label><input type="text" name="totalf"  required/>
+                
+                            
+                        </ol>
+
+                        <br>
+                        <br>
+
+                        <button class="submit" type="submit">Submit Form</button>
+
+                    </form></div>
+                     <a href="reg.html">go to registration</a>

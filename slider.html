@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Registration</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <script src="jquery.min.js"></script> -->
+        <!-- <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+       <!--  <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+        
+        <style>
+           
+             #section0 {padding-top:50px;height:970px;color: #000;border: 2px solid #000;background-color: #ffffff00 ;}
+             
+           
+          
+            
+             *:focus{outline:none;}
+                    body {font: 14px/21px sans-serif;}
+                    #myForm label {font-family: "Times New Roman";}
+                    .required_notification {font-size: 16px;}
+
+                    #myForm ul {
+                        width:750px;
+                        list-style-type:none;
+                        list-style-position:outside;
+                        margin:0px;
+                        padding:0px;
+                    }
+                    #myForm li{
+                        padding:12px;
+                        border-bottom:1px solid #eee;
+                        position:relative;
+                    }
+
+                    #myForm li:first-child, #myForm li:last-child {
+                        border-bottom:1px solid #777;
+                    }
+
+                    #myForm h1 {
+                        text-align: center;
+                        margin:430px;
+                        font-family:Georgia, Times, "Times New Roman", serif;
+                        color:#d45210;
+                        display: inline;
+                    }
+                    .required_notification {
+                        color:#d45252;
+                        margin:-20px 0 0 0;
+                        display:inline;
+                        float:right;
+                    }
+
+                    #myForm label {
+                        color: black;
+                        width:150px;
+                        margin-top: 3px;
+                        display:inline-block;
+                        padding:3px;
+                    }
+                    #myForm input {
+                        height:25px;
+                        width:220px;
+                        padding:5px 8px;
+                    }
+                    #myForm button {margin-left:500px;}
+
+                    #myForm input, #myForm textarea {
+                        border:1px solid black;
+                        box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+                        border-radius:2px;
+                        background: white;
+                    }
+                    #myForm input:focus, #myForm textarea:focus {
+                        background: white;
+                        border:1px solid #555;
+                        box-shadow: 0 0 3px #aaa;
+                    }
+                    /* Button Style */
+                    button.submit {
+                        background-color: #68b12f;
+                        border: 1px solid #509111;
+                        border-bottom: 1px solid #5b992b;
+                        border-radius: 3px;
+                        color: white;
+                        font-weight: bold;
+                        padding: 6px 20px;
+                        text-align: center;
+                        text-shadow: 0 -1px 0 #396715;
+                    }
+                    button.submit:hover {
+                        opacity:.85;
+                        cursor: pointer;
+                    }
+                    button.submit:active {
+                        border: 1px solid #20911e;
+                        box-shadow: 0 0 10px 5px #356b0b inset;
+                    
+                    }
+                    #cl{
+                        text-decoration-color: black;
+                    }
+
+                    #myForm input:required{
+                        
+                         box-shadow: 0 0 5px #fff;
+                         background-color: white;
+                        //border-color: #28921f;
+                    }
+
+                    #myForm input:focus:invalid, #myForm textarea:focus:invalid { 
+                        
+                        box-shadow: 0 0 5px white;
+                        border-color: #b03535;
+                    }
+
+                    #myForm input:required:valid, #myForm textarea:required:valid { 
+                        box-shadow: 0 0 5px #fff;
+                        border-color: #28921f;
+                    }
+                   
+                    *:focus{outline:none;}
+body {font: 14px/21px sans-serif;}
+#subject label {font-family:Times New Roman}
+.required_notification {font-size: 16px;}
+
+body{
+    
+    margin: 0;
+    padding: 0;
+    background: url(images/campus.jpg);
+    background-size: cover;
+    background-position: top;
+    }
+
+#subject ul {
+    width:750px;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+#subject li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    position:relative;
+}
+
+#subject li:first-child, #subject li:last-child {
+    border-bottom:1px solid #777;
+}
+
+#subject h1 {
+    text-align: center;
+    margin:430px;
+	font-family:Times New Roman;
+    color:#d45210;
+	display: inline;
+}
+.required_notification {
+    color:#d45252;
+    margin:-20px 0 0 0;
+    display:inline;
+    float:right;
+}
+
+#subject label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+}
+#subject input,#subject select {
+    height:30px;
+    width:220px;
+    padding:5px 8px;
+}
+#subject button {margin-left:500px;}
+
+#subject input, #subject textarea,#subject select {
+    border:1px solid black;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+}
+#subject input:focus, #subject textarea:focus {
+    background: white;
+    border:1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+}
+/* Button Style */
+button.submit {
+    background-color: #68b12f;
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+    opacity:.85;
+    cursor: pointer;
+}
+button.submit:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+}
+
+#subject input:required{
+    
+    box-shadow: 0 0 5px #fff;
+    border-color: #28921f;
+}
+
+#subject input:focus:invalid, #subject textarea:focus:invalid { 
+   
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+
+#subject input:required:valid, #subject textarea:required:valid { 
+   
+    box-shadow: 0 0 5px #fff;
+    border-color: #28921f;
+}
+#cl{
+    background: black;
+   
+    text-decoration-color: white;
+}
+.pic{
+    font-family: cambria;
+    font-size: 18px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .section0{
+        width: 30%;
+    }
+}
+                    
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    
+                </div>
+                <div class="pic">
+                    <h1>WELCOME TO SRM UNIVERSITY , AP</h1>
+                </div>
+
+                    <!-- <div class="myNav">
+                          <img src="images/campus.jpg"width="100%" height="50%" />
+                    </div> -->
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="fee.html">Fee Submit</a></li>
+                            <li><a href="reg.html"> Student Registration</a></li>
+                            <li><a href="enrol.html">Course Enroll</a></li>
+                            <li><a href="record.html"> Search an ID</a></li>
+
+                            <li><a href="update.html">Manage (Update/Delete)</a></li>
+
+                            <!-- <script>
+                         document.getElementById("myNavbar").style.border = "thin dotted black";
+                            </script> -->
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </nav> 
+        <br>   
+        
+    </body>
+</html>
+
